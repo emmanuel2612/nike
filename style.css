@@ -1,0 +1,176 @@
+body, html{
+    height:100%;
+}
+
+/*#1f1f1f*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#title-header{
+    height:75px;
+    display: flex;
+    align-items: center;
+    padding-left:10%;
+    background-color: #111;
+}
+
+#title-header h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color:#111;
+}
+
+
+
+#billboard{
+    background:url("images/nike.jfif");
+    height:91%;
+
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /*clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);*/
+
+
+}
+
+#billboard h1{
+    color:white;
+    font-family: 'Maven Pro', sans-serif;
+    font-size:5em;
+    font-weight: 600;
+}
+
+#billboard a{
+    border-width: 3px;
+    border-style: solid;
+    border-color:white;
+    border-radius: 500px;
+    color:white;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    padding: 14px 50px;
+    margin-top: 12px;
+    text-decoration: none;
+
+    /*Button Animation*/
+    background: linear-gradient(to right, #ff4500 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .25s ease-out;    
+}
+
+#billboard a:hover {
+    background-position: left bottom;
+    border-color:#ff4500;
+    color:white;
+   
+  }
+  
+
+#counter-banner{
+    padding-top:40px;
+    padding-bottom:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#121212;
+    width:100%;
+}
+
+.wrap-90{
+    width:80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.counter{
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-weight: 400;
+    font-size:1.8em;
+    margin-bottom: 20px;
+}
+
+.counter-wrap{
+    text-align: center;
+}
+
+.counter-wrap p{
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    color:white;
+    font-size: 0.8em;
+}
+
+
+#section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:25px;
+    /*background-color:brown;*/
+    padding-left:16%;
+    padding-right:16%;
+}
+
+#section1-wrap{
+    max-width:960px;
+}
+
+#section-1 img{
+    width:100%;
+}
+
+.text-wrap{
+    width:75%;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1022px) {
+    .text-wrap {
+      width:100%;
+    }
+  }
+
+#section-1 h2{
+    margin-top:70px;
+    margin-bottom:25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size:2em;
+}
+
+#section-1 p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size:1.2em;
+    line-height: 1.55;
+    margin-bottom: 30px;
+}
+
+#section-1 a{
+    padding: 10px 28px;
+    border: solid 3px #121212;
+    border-radius:20px;
+    font-size:16px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color:#121212;
+    font-weight:500;
+    margin-bottom:50px;
+    margin-right: 3px;
+}
